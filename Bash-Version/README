@@ -1,0 +1,41 @@
+=== Das Konsolenradio ===
+
+http://heinemann.ms/radio/
+
+== Was kann das Konsolenradio? ==
+
+Das Konsolenradio ist ein Shellskript zum abspielen von Audiostreams.
+
+Machen sie das Skript unter Linux mit dem Befehl 'chmod +x .radio.sh' ausführbar und rufen sie es durch ./radio.sh dann auf.
+
+Eine Liste von voreingestellten URLs finden sie unter Radiosender
+
+Viel Spaß mit dem Konsolenradio
+
+
+== Radiosender ==
+
+WDR-1Live ; http://gffstream.ic.llnwd.net/stream/gffstream_stream_wdr_einslive_b ;;
+
+WDR 2 Münsterland ; http://gffstream.ic.llnwd.net/stream/gffstream_mp3_w97a ;;
+
+WDR 3; http://gffstream.ic.llnwd.net/stream/gffstream_w21a ;;
+
+WDR 4; http://gffstream.ic.llnwd.net/stream/gffstream_w18a ;;
+
+RadioQ, das Campusradio ; http://radioq.uni-muenster.de:8000/beta ;;
+
+Radio Antenne Münster ;http://stream.antennemuenster.de:8000/am128k ;;
+
+BBC Radio 1 ; http://www.bbc.co.uk/radio/listen/live/r1.asx ;;
+
+NDR N-Joy ; http://sc20.frf.llnw.net:80/stream/ndrstream_n-joy_hi_mp3 ;;
+
+== Lizenzbedingungen ==
+
+Das Konsolenradio wird unter der "Deutsche Freie Software Lizenz" veröffentlicht und 
+darf nur unter den Bedingungen Kopiert werden. Die Lizens ist in der Datei 'lizenz.txt'
+nachzulesen. 
+
+== Kontakt ==
+Mail: konsolenradio@heinemann.ms
