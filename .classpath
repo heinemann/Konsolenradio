@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="src/main/resources/JLayer1.0.1/jl1.0.1.jar" sourcepath="src/main/resources/JLayer1.0.1/src"/>
 	<classpathentry kind="lib" path="src/main/resources/MpegAudioSPI1.9.5/mp3spi1.9.5.jar" sourcepath="src/main/resources/MpegAudioSPI1.9.5/src"/>
 	<classpathentry kind="lib" path="src/main/resources/MpegAudioSPI1.9.5/lib/tritonus_share.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

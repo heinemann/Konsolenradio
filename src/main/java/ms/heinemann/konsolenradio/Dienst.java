@@ -47,6 +47,10 @@ public class Dienst {
 	public static String Dienst1() {
 		setDienst("Pause");
 		Wiedergabe.senderWechsel = true;
+		if (Radio.Käfer == true) {
+			System.out.println("Dienst beendet Thread");
+		}
+		Wiedergabe.senderWechsel = false;
 		try {
 			Radio.Dienstwahl();
 		} catch (IOException e) {
@@ -80,11 +84,12 @@ public class Dienst {
 	}
 
 	public static void leseKatalog() {
-		Katalog = "\n 0 - Aus   : Schaltet das Radio aus \n 1 - Pause : Beendet die Wiedergabe und verbleibt in der Dienstauswahl \n Enter     : Es geht zur Senderauswahl ";
+		Katalog = "\n 0 - Aus   : Schaltet das Radio aus \n 1 - Pause : Beendet die Wiedergabe und verbleibt in der Dienstauswahl \n Enter     : Es geht zur Senderauswahl \n";
 
 	}
 
 	public static String getKatalog() {
+		leseKatalog();
 		return Katalog;
 	}
 }

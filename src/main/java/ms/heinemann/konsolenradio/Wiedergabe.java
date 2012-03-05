@@ -28,6 +28,7 @@ public class Wiedergabe extends Thread {
 
 		// while (!isInterrupted()) {
 		// while (running) {
+		Wiedergabe.senderWechsel = false;
 		Empfangen();
 		// }
 		if (Radio.Käfer == true) {
@@ -43,7 +44,10 @@ public class Wiedergabe extends Thread {
 	}
 
 	public static void Empfangen() {
-		playStream(Frequenz.getStreamUrl());
+		if (Radio.Käfer == true) {
+			System.out.println("URL wird geholt." + Radio.frequenz.getUrl());
+		}
+		playStream(Radio.frequenz.getUrl());
 	}
 
 	private static void playStream(String streamUrl) {
@@ -67,7 +71,7 @@ public class Wiedergabe extends Thread {
 					false);
 			din = AudioSystem.getAudioInputStream(decodedFormat, in);
 			// Play now.
-			System.out.println("\n On Air - " + Frequenz.getSender());
+			System.out.println("\n On Air - " + Radio.frequenz.getName());
 			// notify();
 			rawplay(decodedFormat, din);
 			in.close();
