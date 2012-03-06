@@ -24,7 +24,7 @@ public enum Frequenzen implements Comparable<Frequenzen> {
 
 	NDR_2("6", "NDR 2", "", "MP3", true),
 
-	RADDIOQ("7", "Radio Q", "http://radioq.uni-muenster.de:8000/beta", "MP3",
+	RADDIOQ("7", "Radio Q", "http://stream.radioq.de:8000/gross.mp3", "MP3",
 			true),
 
 	AM("8", "Antenne Münster", "http://stream.antennemuenster.de:8000/am128k",
