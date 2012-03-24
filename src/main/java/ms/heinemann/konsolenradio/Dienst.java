@@ -14,7 +14,8 @@ public class Dienst {
 	private static String Dienst;
 	private static Boolean Energie = true;
 	private static String Katalog;
-	UI ui = new UI();
+
+	// UI uid = new UI();
 
 	// ui = Radio.ui;
 
@@ -31,7 +32,7 @@ public class Dienst {
 		} else {
 			System.out.printf("Dienst %s ist fehlgeschlagen", getDienst());
 			try {
-				ui.Dienstwahl();
+				// uid.Dienstwahl();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				System.out
@@ -55,7 +56,7 @@ public class Dienst {
 		}
 		Wiedergabe.senderWechsel = false;
 		try {
-			ui.Dienstwahl();
+			uid.Dienstwahl();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			System.out
