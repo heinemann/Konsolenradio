@@ -14,8 +14,11 @@ public class Dienst {
 	private static String Dienst;
 	private static Boolean Energie = true;
 	private static String Katalog;
+	UI ui = new UI();
 
-	public static void pult(String eingabe) {
+	// ui = Radio.ui;
+
+	public void pult(String eingabe) {
 		if (eingabe.equals("Dienst0") | eingabe.equals(("Aus"))
 				| eingabe.equals("0")) {
 			Dienst0();
@@ -28,7 +31,7 @@ public class Dienst {
 		} else {
 			System.out.printf("Dienst %s ist fehlgeschlagen", getDienst());
 			try {
-				Radio.Dienstwahl();
+				ui.Dienstwahl();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				System.out
@@ -38,13 +41,13 @@ public class Dienst {
 		}
 	}
 
-	public static Boolean Dienst0() {
+	public Boolean Dienst0() {
 		Wiedergabe.senderWechsel = true;
 		setEnergie(false);
 		return getEnergie();
 	}
 
-	public static String Dienst1() {
+	public String Dienst1() {
 		setDienst("Pause");
 		Wiedergabe.senderWechsel = true;
 		if (Radio.Käfer == true) {
@@ -52,7 +55,7 @@ public class Dienst {
 		}
 		Wiedergabe.senderWechsel = false;
 		try {
-			Radio.Dienstwahl();
+			ui.Dienstwahl();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			System.out
@@ -67,28 +70,28 @@ public class Dienst {
 	 * 
 	 * @param dienst
 	 */
-	public static void setDienst(String dienst) {
+	public void setDienst(String dienst) {
 		Dienst = dienst;
 	}
 
-	public static String getDienst() {
+	public String getDienst() {
 		return Dienst;
 	}
 
-	public static void setEnergie(Boolean energie) {
+	public void setEnergie(Boolean energie) {
 		Energie = energie;
 	}
 
-	public static Boolean getEnergie() {
+	public Boolean getEnergie() {
 		return Energie;
 	}
 
-	public static void leseKatalog() {
+	public void leseKatalog() {
 		Katalog = "\n 0 - Aus   : Schaltet das Radio aus \n 1 - Pause : Beendet die Wiedergabe und verbleibt in der Dienstauswahl \n Enter     : Es geht zur Senderauswahl \n";
 
 	}
 
-	public static String getKatalog() {
+	public String getKatalog() {
 		leseKatalog();
 		return Katalog;
 	}
