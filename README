@@ -1,0 +1,54 @@
+=== Das Konsolenradio ===
+
+https://github.com/heinemann/Konsolenradio/
+
+== Was kann das Konsolenradio? ==
+
+Das Konsolenradio enstand aus einem Shellskript zum abspielen von Audiostreams unter Linux. 
+Als Programmierübung habe ich die Funktion in Java nachprogrammiert und erweitere die 
+Funktion und Qualität der Software hier und da. 
+
+
+Eine Liste von voreingestellten URLs finden sie unter Radiosender
+
+Viel Spaß mit dem Konsolenradio
+
+== Starten des Konsolenradios ==
+=== Linux ===
+Machen Sie das Programm mit dem Befehl 'chmod +x .radio.sh' ausführbar und rufen sie es durch ./radio.sh dann auf.
+
+== Windows ==
+Führen Sie die Datei radio.bat aus. 
+== Andere Betriebssysteme ==
+Starten  Sie die Jar-Datei mit 'java -jar radio.jar'
+
+== Radiosender ==
+
+WDR-1Live ; http://gffstream.ic.llnwd.net/stream/gffstream_stream_wdr_einslive_b ;;
+
+WDR 2 Münsterland ; http://gffstream.ic.llnwd.net/stream/gffstream_mp3_w97a ;;
+
+WDR 3; http://gffstream.ic.llnwd.net/stream/gffstream_w21a ;;
+
+WDR 4; http://gffstream.ic.llnwd.net/stream/gffstream_w18a ;;
+
+RadioQ, das Campusradio ; http://stream.radioq.de:8000/gross.mp3 ;;
+
+Hochschulradio Aachen ; http://evans.hochschulradio.rwth-aachen.de:8000/radio.mp3 ;;
+
+Radio Antenne Münster ;http://stream.antennemuenster.de:8000/am128k ;;
+
+BBC Radio 1 ; http://www.bbc.co.uk/radio/listen/live/r1.asx ;;
+
+NDR N-Joy ; http://sc20.frf.llnw.net:80/stream/ndrstream_n-joy_hi_mp3 ;;
+
+OGG-Teststream ; OGGTest", "http://live.tlis.sk:8000/live.ogg ;;
+
+== Lizenzbedingungen ==
+
+Das Konsolenradio wird unter der "Deutsche Freie Software Lizenz" veröffentlicht und 
+darf nur unter den Bedingungen Kopiert werden. Die Lizens ist in der Datei 'lizenz.txt'
+nachzulesen. 
+
+== Kontakt ==
+Mail: konsolenradio@heinemann.ms
